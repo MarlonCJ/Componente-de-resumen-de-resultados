@@ -2,46 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="container">
+      <div class="row">
+          <div class="col col-result">
+              <h1>Your Result</h1>
+              <div class="circle">
+                  <span>76</span>
+                  <span>of 100</span>
+              </div>
+              <h2>Great</h2>
+              <p>You scored higher than 65% of the people who have taken these tests.</p>
+          </div>
+          <div class="col col-values">
+              <h3>Summary</h3>
+              <div class="result-box">
+                  <div class="result-element bg-red">
+                      <div class="element-icon color-red">
+                        <img src="assets/images/icon-reaction.svg" alt="reaction">
+                        Reaction</div>
+                      <div class="element-number"><strong>80</strong> / 100</div>
+                  </div>
+                  <div class="result-element bg-yellow">
+                    <div class="element-icon color-yellow">
+                      <img src="assets/images/icon-memory.svg" alt="Memory">
+                      Memory</div>
+                    <div class="element-number"><strong>92</strong> / 100</div>
+                  </div>
+                  <div class="result-element bg-green">
+                    <div class="element-icon color-green">
+                      <img src="assets/images/icon-verbal.svg" alt="Verbal">
+                      Verbal</div>
+                    <div class="element-number"><strong>61</strong> / 100</div>
+                  </div>
+                  <div class="result-element bg-blue">
+                    <div class="element-icon color-blue">
+                      <img src="assets/images/icon-visual.svg" alt="Visual">
+                      Visual</div>
+                    <div class="element-number"><strong>72</strong> / 100</div>
+                  </div>
+              </div>
+              <div class="btn-box">
+                  <a class="btn-link" href="#">Continue</a>
+              </div>
+          </div>
+      </div>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Marlon Edinson CJ</a>.
+      </div>
   </div>
+  
+  
 </body>
 </html>
