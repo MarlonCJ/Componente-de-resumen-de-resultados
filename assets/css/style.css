@@ -66,7 +66,7 @@ body{
     padding: 0;
 }
 
-.container{
+.main{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,13 +74,13 @@ body{
     height: 100vh;
 }
 
-.row{
+.article{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     background-color: var(--white);
 }
 
-.col{
+.section{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -186,11 +186,11 @@ body{
         padding: 20px;
     }
 
-    .container{
+    .main{
         justify-content: center;
     }
 
-    .row{
+    .article{
         max-width: 800px;
         grid-template-columns: repeat(2, 1fr);
         box-shadow: 10px 10px 20px 0 rgba(141, 141, 141, 0.39);
